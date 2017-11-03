@@ -1,0 +1,16 @@
+PODS:
+  - LCDView (0.0.1)
+
+DEPENDENCIES:
+  - LCDView (from `../`)
+
+EXTERNAL SOURCES:
+  LCDView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LCDView: c69e69ddce60b4e879e6fa6d431ab67ea7603fee
+
+PODFILE CHECKSUM: af97b85ec26fd355af40228746b0519d68351dcd
+
+COCOAPODS: 1.2.0

@@ -1,0 +1,7 @@
+platform :ios, '9.0'
+use_frameworks!
+
+target 'LCDViewDemo-iOS' do
+  pod 'LCDView', :path => '../'
+end
+

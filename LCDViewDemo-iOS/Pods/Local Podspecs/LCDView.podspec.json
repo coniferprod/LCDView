@@ -1,0 +1,26 @@
+{
+  "name": "LCDView",
+  "version": "0.0.1",
+  "summary": "LCD display component for UIKit",
+  "description": "UIKit custom component that emulates an LCD panel.",
+  "homepage": "https://github.com/coniferprod/LCDView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Jere Käpyaho": "jere@coniferproductions.com"
+  },
+  "source": {
+    "git": "https://github.com/coniferprod/LCDView.git",
+    "tag": "0.0.1"
+  },
+  "social_media_url": "https://twitter.com/coniferprod",
+  "platforms": {
+    "ios": "9.0"
+  },
+  "ios": {
+    "frameworks": "UIKit"
+  },
+  "source_files": "LCDView/Classes/**/*"
+}

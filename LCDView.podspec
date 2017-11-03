@@ -15,7 +15,10 @@ UIKit custom component that emulates an LCD panel.
   s.social_media_url = 'https://twitter.com/coniferprod'
 
   s.ios.deployment_target = '9.0'
-  s.ios.frameworks = 'Foundation', 'Contacts'
+  s.ios.frameworks = 'UIKit'
+
+  #s.osx.deployment_target = '10.12.3'
+  #s.osx.frameworks = 'Cocoa'
 
   s.source_files = 'LCDView/Classes/**/*'
   
