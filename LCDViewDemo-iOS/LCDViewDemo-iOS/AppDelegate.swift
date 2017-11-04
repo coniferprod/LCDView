@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  LCDViewDemo-iOS
-//
-//  Created by Jere Käpyaho on 03/11/2017.
-//  Copyright © 2017 Conifer Productions Oy. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain

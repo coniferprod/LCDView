@@ -1,0 +1,6 @@
+framework module LCDView {
+  umbrella header "LCDView-umbrella.h"
+
+  export *
+  module * { export * }
+}

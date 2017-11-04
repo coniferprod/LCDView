@@ -3,84 +3,142 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2641BD8088CD42CE3A03761833CF7D80 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		8BD1E1BB0187AB1E6E7499213AA91267 /* Pods-LCDViewDemo-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DD27E0577783F5B799CFE519AE000203 /* Pods-LCDViewDemo-iOS-dummy.m */; };
-		D3F7EE21F6C06EC71A6C21AF51BD2B0D /* Pods-LCDViewDemo-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F8AFC864AF3E6BEFE518DA5CF130943 /* Pods-LCDViewDemo-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		055ED43402E67AF3514DA9FE85099C00 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		4C18F03047F39C674C92F5EE7A735A98 /* LCDView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6259DC923945AFB00CEE46BF07067C22 /* LCDView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5DE50EE4C96DF3FC0F811CBB0A506760 /* Pods-LCDViewDemo-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F8AFC864AF3E6BEFE518DA5CF130943 /* Pods-LCDViewDemo-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6F4CFD9551812401F01FD1F38CF7E7FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		720972634808ECE3C88122B76D04BA09 /* Pods-LCDViewDemo-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DD27E0577783F5B799CFE519AE000203 /* Pods-LCDViewDemo-iOS-dummy.m */; };
+		981BC6E216B01BE0546199FE5E97E7F2 /* LCDView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 19EA19AC2C8A69D2292B8005459AE9AD /* LCDView-dummy.m */; };
+		A0AE3E87138EA8D799EFC624B058B2D1 /* LCDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDDC74F92EA8E14D6B11B486382B3F7 /* LCDView.swift */; };
+		D0865E6C52869192128C0B066B00E0E4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		12B7CC664B1579AD8DCF6545D26A6367 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 128A3D4A91383E8F7F26D6BAE7E8ECDC;
+			remoteInfo = LCDView;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		03C5ED0DB58C3B4D0F40B2EF806DD411 /* Pods-LCDViewDemo-iOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LCDViewDemo-iOS-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0ECB755AF3FC25742742BA026EFDF93D /* LCDView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LCDView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1115CC9B2EA0AFB035D065EF465433E4 /* Pods-LCDViewDemo-iOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LCDViewDemo-iOS-acknowledgements.plist"; sourceTree = "<group>"; };
 		12D221A68769EF02896837249C69DD47 /* Pods-LCDViewDemo-iOS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LCDViewDemo-iOS-frameworks.sh"; sourceTree = "<group>"; };
-		6058D0B868CBE67FA7816E17F48DB3B0 /* Pods-LCDViewDemo-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-LCDViewDemo-iOS.modulemap"; sourceTree = "<group>"; };
-		6C3F3BDAFAB5851AD3E8D89BB7995069 /* Pods_LCDViewDemo_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LCDViewDemo_iOS.framework; path = "Pods-LCDViewDemo-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		19EA19AC2C8A69D2292B8005459AE9AD /* LCDView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LCDView-dummy.m"; sourceTree = "<group>"; };
+		1D769E2CDFD97E85F1559BD2FE2B6165 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31FC65D1C4AF8FDAB3A6A62523190273 /* Pods_LCDViewDemo_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LCDViewDemo_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6058D0B868CBE67FA7816E17F48DB3B0 /* Pods-LCDViewDemo-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LCDViewDemo-iOS.modulemap"; sourceTree = "<group>"; };
+		616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6259DC923945AFB00CEE46BF07067C22 /* LCDView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LCDView-umbrella.h"; sourceTree = "<group>"; };
+		7CDDC74F92EA8E14D6B11B486382B3F7 /* LCDView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LCDView.swift; sourceTree = "<group>"; };
+		7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		837FEBD243CF979A98137F1B806FA3D2 /* LCDView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LCDView.modulemap; sourceTree = "<group>"; };
+		8C2A199F7D725575279CC4A230909685 /* LCDView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LCDView-prefix.pch"; sourceTree = "<group>"; };
 		8F8AFC864AF3E6BEFE518DA5CF130943 /* Pods-LCDViewDemo-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LCDViewDemo-iOS-umbrella.h"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9EA723CF1AE1D7EBF371EDF0B53D4E17 /* LCDView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LCDView.xcconfig; sourceTree = "<group>"; };
 		A42630B32A228B2CC6F59DAB41816942 /* Pods-LCDViewDemo-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LCDViewDemo-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		B113494D1C43FC069610866393F50A5A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B9362CED13462BD1BC513FF54067A574 /* Pods-LCDViewDemo-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LCDViewDemo-iOS.release.xcconfig"; sourceTree = "<group>"; };
-		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D7FBF463821ED13157907257CF8596C5 /* Pods-LCDViewDemo-iOS-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LCDViewDemo-iOS-resources.sh"; sourceTree = "<group>"; };
 		DD27E0577783F5B799CFE519AE000203 /* Pods-LCDViewDemo-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LCDViewDemo-iOS-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1E050242938C29D7BA79E49A40D37424 /* Frameworks */ = {
+		E7854CD2AB5A3B56076CB26D7D72AC81 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2641BD8088CD42CE3A03761833CF7D80 /* Foundation.framework in Frameworks */,
+				055ED43402E67AF3514DA9FE85099C00 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD5B65E4B575F80C6BCDC10C6313BFA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F4CFD9551812401F01FD1F38CF7E7FE /* Foundation.framework in Frameworks */,
+				D0865E6C52869192128C0B066B00E0E4 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		001C1775DDCB3F08E8350CD3086F1F7C /* Products */ = {
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6C3F3BDAFAB5851AD3E8D89BB7995069 /* Pods_LCDViewDemo_iOS.framework */,
+				E6EE98446B568159EE277B68FD442AF0 /* iOS */,
 			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
-			);
-			name = iOS;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				DA2DB85886D9BA81736FE473252D0634 /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				001C1775DDCB3F08E8350CD3086F1F7C /* Products */,
+				D0E310F8B9E71C798C5D645E4419177C /* Development Pods */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				AE279AF447E271E0DD262323890A7997 /* Products */,
 				E651F36436FB33E8DD8CD3E9C998AD1D /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		A55F29A889F3B6FA7BB8B0A8EDFF0DA7 /* LCDView */ = {
 			isa = PBXGroup;
 			children = (
-				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D466BB25E615A4D62883486325879B56 /* LCDView */ = {
-			isa = PBXGroup;
-			children = (
+				EB67AB387FD12628B8D782CD6D6C811F /* LCDView */,
+				AFFE5AD90A92884FD51AD63095250CBF /* Support Files */,
 			);
 			name = LCDView;
 			path = ../..;
+			sourceTree = "<group>";
+		};
+		AE279AF447E271E0DD262323890A7997 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0ECB755AF3FC25742742BA026EFDF93D /* LCDView.framework */,
+				31FC65D1C4AF8FDAB3A6A62523190273 /* Pods_LCDViewDemo_iOS.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AFFE5AD90A92884FD51AD63095250CBF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1D769E2CDFD97E85F1559BD2FE2B6165 /* Info.plist */,
+				837FEBD243CF979A98137F1B806FA3D2 /* LCDView.modulemap */,
+				9EA723CF1AE1D7EBF371EDF0B53D4E17 /* LCDView.xcconfig */,
+				19EA19AC2C8A69D2292B8005459AE9AD /* LCDView-dummy.m */,
+				8C2A199F7D725575279CC4A230909685 /* LCDView-prefix.pch */,
+				6259DC923945AFB00CEE46BF07067C22 /* LCDView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "LCDViewDemo-iOS/Pods/Target Support Files/LCDView";
+			sourceTree = "<group>";
+		};
+		B334BC7C0BB30E736259F2F9A9BE2599 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7CDDC74F92EA8E14D6B11B486382B3F7 /* LCDView.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		D0E310F8B9E71C798C5D645E4419177C /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A55F29A889F3B6FA7BB8B0A8EDFF0DA7 /* LCDView */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		D89F2C2FBE844C0F07BB84A68B3EC81B /* Pods-LCDViewDemo-iOS */ = {
@@ -101,14 +159,6 @@
 			path = "Target Support Files/Pods-LCDViewDemo-iOS";
 			sourceTree = "<group>";
 		};
-		DA2DB85886D9BA81736FE473252D0634 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				D466BB25E615A4D62883486325879B56 /* LCDView */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
 		E651F36436FB33E8DD8CD3E9C998AD1D /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -117,35 +167,78 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		E6EE98446B568159EE277B68FD442AF0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */,
+				7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		EB67AB387FD12628B8D782CD6D6C811F /* LCDView */ = {
+			isa = PBXGroup;
+			children = (
+				B334BC7C0BB30E736259F2F9A9BE2599 /* Classes */,
+			);
+			path = LCDView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		4FDFEEEA1BBCE58F5428E2B9037585EB /* Headers */ = {
+		543CCEF75F272C0C64B23EB4F96FA37E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3F7EE21F6C06EC71A6C21AF51BD2B0D /* Pods-LCDViewDemo-iOS-umbrella.h in Headers */,
+				4C18F03047F39C674C92F5EE7A735A98 /* LCDView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A4EE888DD2141E5A091214EADD02996 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DE50EE4C96DF3FC0F811CBB0A506760 /* Pods-LCDViewDemo-iOS-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0A9A37FFC9A7FCF36F31210C2058D7EE /* Pods-LCDViewDemo-iOS */ = {
+		128A3D4A91383E8F7F26D6BAE7E8ECDC /* LCDView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3442A5A679791F90A95F5C2605F0DD56 /* Build configuration list for PBXNativeTarget "Pods-LCDViewDemo-iOS" */;
+			buildConfigurationList = 8CF68774C28D49719A288E633543ABC2 /* Build configuration list for PBXNativeTarget "LCDView" */;
 			buildPhases = (
-				060F9C4F31DD9A90FBBB3BEA739FB613 /* Sources */,
-				1E050242938C29D7BA79E49A40D37424 /* Frameworks */,
-				4FDFEEEA1BBCE58F5428E2B9037585EB /* Headers */,
+				59504E685E3CEDA67F51C11606C75127 /* Sources */,
+				FD5B65E4B575F80C6BCDC10C6313BFA5 /* Frameworks */,
+				543CCEF75F272C0C64B23EB4F96FA37E /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
+			name = LCDView;
+			productName = LCDView;
+			productReference = 0ECB755AF3FC25742742BA026EFDF93D /* LCDView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5891506337E450E85C68FF90A79FAF99 /* Pods-LCDViewDemo-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB31880CBE1AFFA6A03151A334022C8E /* Build configuration list for PBXNativeTarget "Pods-LCDViewDemo-iOS" */;
+			buildPhases = (
+				EBD91C83986EE227C334CA8744CD3649 /* Sources */,
+				E7854CD2AB5A3B56076CB26D7D72AC81 /* Frameworks */,
+				8A4EE888DD2141E5A091214EADD02996 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C72330E4053404EEAC6E1518A80F19E1 /* PBXTargetDependency */,
+			);
 			name = "Pods-LCDViewDemo-iOS";
 			productName = "Pods-LCDViewDemo-iOS";
-			productReference = 6C3F3BDAFAB5851AD3E8D89BB7995069 /* Pods_LCDViewDemo_iOS.framework */;
+			productReference = 31FC65D1C4AF8FDAB3A6A62523190273 /* Pods_LCDViewDemo_iOS.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -155,7 +248,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0910;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -165,28 +258,115 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 001C1775DDCB3F08E8350CD3086F1F7C /* Products */;
+			productRefGroup = AE279AF447E271E0DD262323890A7997 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0A9A37FFC9A7FCF36F31210C2058D7EE /* Pods-LCDViewDemo-iOS */,
+				128A3D4A91383E8F7F26D6BAE7E8ECDC /* LCDView */,
+				5891506337E450E85C68FF90A79FAF99 /* Pods-LCDViewDemo-iOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		060F9C4F31DD9A90FBBB3BEA739FB613 /* Sources */ = {
+		59504E685E3CEDA67F51C11606C75127 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BD1E1BB0187AB1E6E7499213AA91267 /* Pods-LCDViewDemo-iOS-dummy.m in Sources */,
+				981BC6E216B01BE0546199FE5E97E7F2 /* LCDView-dummy.m in Sources */,
+				A0AE3E87138EA8D799EFC624B058B2D1 /* LCDView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBD91C83986EE227C334CA8744CD3649 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				720972634808ECE3C88122B76D04BA09 /* Pods-LCDViewDemo-iOS-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		C72330E4053404EEAC6E1518A80F19E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LCDView;
+			target = 128A3D4A91383E8F7F26D6BAE7E8ECDC /* LCDView */;
+			targetProxy = 12B7CC664B1579AD8DCF6545D26A6367 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		1E7932AE08D812FEDC76B75FC633B815 /* Release */ = {
+		32F5BA24E761469A70DEABED92DE4CB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EA723CF1AE1D7EBF371EDF0B53D4E17 /* LCDView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LCDView/LCDView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LCDView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LCDView/LCDView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = LCDView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4CC687DD3EFEE11AC731E855F0BCE639 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A42630B32A228B2CC6F59DAB41816942 /* Pods-LCDViewDemo-iOS.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-LCDViewDemo-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LCDViewDemo-iOS/Pods-LCDViewDemo-iOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LCDViewDemo_iOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		58A5B34971A715C1E761A1E45DB13379 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B9362CED13462BD1BC513FF54067A574 /* Pods-LCDViewDemo-iOS.release.xcconfig */;
 			buildSettings = {
@@ -230,20 +410,30 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_DEBUG=1",
@@ -265,41 +455,6 @@
 			};
 			name = Debug;
 		};
-		84CB28AA5032DB84FE9E4AA0F44C5A7D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A42630B32A228B2CC6F59DAB41816942 /* Pods-LCDViewDemo-iOS.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-LCDViewDemo-iOS/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-LCDViewDemo-iOS/Pods-LCDViewDemo-iOS.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_LCDViewDemo_iOS;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		B7324857C38B065FEB1EEE3105C2367A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -309,19 +464,29 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_RELEASE=1",
 					"$(inherited)",
@@ -335,10 +500,44 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
+		};
+		F3E92ED58AC5D2F0667E4797749751CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EA723CF1AE1D7EBF371EDF0B53D4E17 /* LCDView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LCDView/LCDView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LCDView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LCDView/LCDView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = LCDView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
@@ -352,11 +551,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3442A5A679791F90A95F5C2605F0DD56 /* Build configuration list for PBXNativeTarget "Pods-LCDViewDemo-iOS" */ = {
+		8CF68774C28D49719A288E633543ABC2 /* Build configuration list for PBXNativeTarget "LCDView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				84CB28AA5032DB84FE9E4AA0F44C5A7D /* Debug */,
-				1E7932AE08D812FEDC76B75FC633B815 /* Release */,
+				F3E92ED58AC5D2F0667E4797749751CF /* Debug */,
+				32F5BA24E761469A70DEABED92DE4CB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB31880CBE1AFFA6A03151A334022C8E /* Build configuration list for PBXNativeTarget "Pods-LCDViewDemo-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CC687DD3EFEE11AC731E855F0BCE639 /* Debug */,
+				58A5B34971A715C1E761A1E45DB13379 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
