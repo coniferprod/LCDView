@@ -18,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WZz-2b-Bld" customClass="LCDView" customModule="LCDView">
-                                <rect key="frame" x="16" y="20" width="343" height="73"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WZz-2b-Bld" customClass="LCDView" customModule="LCDView">
+                                <rect key="frame" x="16" y="20" width="343" height="62"/>
                                 <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="caption" value="_^\\Bb1234"/>
@@ -35,6 +35,12 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="dotSpacing">
                                         <integer key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="characterSpacing">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
@@ -42,7 +48,7 @@
                         <constraints>
                             <constraint firstItem="WZz-2b-Bld" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="6H6-7a-pba"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WZz-2b-Bld" secondAttribute="trailing" constant="16" id="8Yf-fS-jQc"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WZz-2b-Bld" secondAttribute="bottom" constant="562" id="jYl-IF-Ko0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WZz-2b-Bld" secondAttribute="bottom" constant="585" id="jYl-IF-Ko0"/>
                             <constraint firstItem="WZz-2b-Bld" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="rUF-hH-pPn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
