@@ -109,7 +109,7 @@ let matrix5x7Font: Font = [
     "{": ["00010", "00100", "00100", "01000", "00100", "00100", "00010"],
     "|": ["00100", "00100", "00100", "00100", "00100", "00100", "00100"],
     "}": ["01000", "00100", "00100", "00010", "00100", "00100", "01000"],
-    "\u{00B0}": ["00000", "01110", "01010", "01110", "00000", "00000", "00000"], // not great
+    "\u{00B0}": ["01110", "01010", "01110", "00000", "00000", "00000", "00000"]
 ]
 
 
@@ -120,8 +120,11 @@ public class LCDView: UIView {
             self.setNeedsDisplay()
         }
     }
+    
     @IBInspectable var borderColor: UIColor = UIColor.white
+    
     @IBInspectable var dotOnColor: UIColor = UIColor.init(red: 0.0, green: 0.9, blue: 0.0, alpha: 1.0)
+    
     @IBInspectable var dotOffColor: UIColor = UIColor.init(red: 0.0, green: 0.5, blue: 0.0, alpha: 1.0)
     
     @IBInspectable var dotSpacing: Int {
@@ -130,33 +133,60 @@ public class LCDView: UIView {
         }
     }
     
+    @IBInspectable var dotWidth: Int {
+        didSet {
+            self.setNeedsDisplay()
+        }
+    }
+    
+    @IBInspectable var dotHeight: Int {
+        didSet {
+            self.setNeedsDisplay()
+        }
+    }
+    
+    @IBInspectable var characterSpacing: Int {
+        didSet {
+            self.setNeedsDisplay()
+        }
+    }
+    
+    @IBInspectable var padding: Int {
+        didSet {
+            self.setNeedsDisplay()
+        }
+    }
+    
     var font: Font?
     var dotMatrixStyle: LCDDotMatrixStyle?
     var borderStyle: LCDBorderStyle = .none
-    var dotWidth: CGFloat = 4.0
-    var dotHeight: CGFloat = 4.0
-    //var interDotSpacing: CGFloat = 4.0
-    var interCharacterSpacing: CGFloat = 8.0
-    var padding: CGFloat = 4.0
     var matrixWidth = 5
     var matrixHeight = 7
     
     override init(frame: CGRect) {
         self.dotMatrixStyle = .matrix5x7
-        // TODO: Set matrix width and height from style constant
+        // TODO: Set matrix width and height based on style constant
         
         self.font = matrix5x7Font
 
         self.caption = ""
         self.dotSpacing = 4
-        
+        self.characterSpacing = 8
+        self.padding = 4
+        self.dotWidth = 4
+        self.dotHeight = 4
+
         super.init(frame: frame)
     }
     
     public required init?(coder aDecoder: NSCoder) {
         self.caption = ""
         self.dotSpacing = 4
-        
+        self.characterSpacing = 8
+        self.padding = 4
+        self.dotWidth = 4
+        self.dotHeight = 4
+
         super.init(coder: aDecoder)
         
         self.dotMatrixStyle = .matrix5x7
@@ -170,13 +200,13 @@ public class LCDView: UIView {
             return
         }
         
-        var xpos = self.padding + 5
-        let ypos = 1 + self.padding + 5
-        let charWidth = (CGFloat(self.matrixWidth) * self.dotWidth) + ((CGFloat(self.matrixWidth) - 1) * CGFloat(self.dotSpacing))
+        var xpos = CGFloat(self.padding + 5)
+        let ypos = CGFloat(1 + self.padding + 5)
+        let charWidth = CGFloat(self.matrixWidth * self.dotWidth + ((self.matrixWidth - 1) * self.dotSpacing))
         
         for ch in self.caption {
             drawCharacter(ch, at: CGPoint(x: xpos, y: ypos), in: context)
-            xpos = xpos + CGFloat(charWidth) + CGFloat(self.interCharacterSpacing)
+            xpos = xpos + CGFloat(charWidth) + CGFloat(self.characterSpacing)
         }
     }
 
@@ -216,16 +246,16 @@ public class LCDView: UIView {
 
                 context.move(to: CGPoint(x: tx, y: tx))
 
-                let dotRect = CGRect(x: tx, y: ty, width: self.dotWidth, height: self.dotHeight)
+                let dotRect = CGRect(x: tx, y: ty, width: CGFloat(self.dotWidth), height: CGFloat(self.dotHeight))
                 context.addRect(dotRect)
 
                 context.fillPath()
                 
-                tx = tx + self.dotWidth + CGFloat(self.dotSpacing)
+                tx += CGFloat(self.dotWidth + self.dotSpacing)
             }
             
             tx = at.x
-            ty = ty + self.dotHeight + CGFloat(self.dotSpacing)
+            ty += CGFloat(self.dotHeight + self.dotSpacing)
         }
     }
 }
