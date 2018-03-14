@@ -108,7 +108,8 @@ let matrix5x7Font: Font = [
     "z": ["00000", "00000", "11111", "00010", "00100", "01000", "11111"],
     "{": ["00010", "00100", "00100", "01000", "00100", "00100", "00010"],
     "|": ["00100", "00100", "00100", "00100", "00100", "00100", "00100"],
-    "}": ["01000", "00100", "00100", "00010", "00100", "00100", "01000"]
+    "}": ["01000", "00100", "00100", "00010", "00100", "00100", "01000"],
+    "\u{00B0}": ["00000", "01110", "01010", "01110", "00000", "00000", "00000"], // not great
 ]
 
 
@@ -123,12 +124,18 @@ public class LCDView: UIView {
     @IBInspectable var dotOnColor: UIColor = UIColor.init(red: 0.0, green: 0.9, blue: 0.0, alpha: 1.0)
     @IBInspectable var dotOffColor: UIColor = UIColor.init(red: 0.0, green: 0.5, blue: 0.0, alpha: 1.0)
     
+    @IBInspectable var dotSpacing: Int {
+        didSet {
+            self.setNeedsDisplay()
+        }
+    }
+    
     var font: Font?
     var dotMatrixStyle: LCDDotMatrixStyle?
     var borderStyle: LCDBorderStyle = .none
     var dotWidth: CGFloat = 4.0
     var dotHeight: CGFloat = 4.0
-    var interDotSpacing: CGFloat = 4.0
+    //var interDotSpacing: CGFloat = 4.0
     var interCharacterSpacing: CGFloat = 8.0
     var padding: CGFloat = 4.0
     var matrixWidth = 5
@@ -141,12 +148,14 @@ public class LCDView: UIView {
         self.font = matrix5x7Font
 
         self.caption = ""
+        self.dotSpacing = 4
         
         super.init(frame: frame)
     }
     
     public required init?(coder aDecoder: NSCoder) {
         self.caption = ""
+        self.dotSpacing = 4
         
         super.init(coder: aDecoder)
         
@@ -163,7 +172,7 @@ public class LCDView: UIView {
         
         var xpos = self.padding + 5
         let ypos = 1 + self.padding + 5
-        let charWidth = (CGFloat(self.matrixWidth) * self.dotWidth) + ((CGFloat(self.matrixWidth) - 1) * self.interDotSpacing)
+        let charWidth = (CGFloat(self.matrixWidth) * self.dotWidth) + ((CGFloat(self.matrixWidth) - 1) * CGFloat(self.dotSpacing))
         
         for ch in self.caption {
             drawCharacter(ch, at: CGPoint(x: xpos, y: ypos), in: context)
@@ -212,11 +221,11 @@ public class LCDView: UIView {
 
                 context.fillPath()
                 
-                tx = tx + self.dotWidth + self.interDotSpacing
+                tx = tx + self.dotWidth + CGFloat(self.dotSpacing)
             }
             
             tx = at.x
-            ty = ty + self.dotHeight + self.interDotSpacing
+            ty = ty + self.dotHeight + CGFloat(self.dotSpacing)
         }
     }
 }
