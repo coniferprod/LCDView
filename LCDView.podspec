@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'LCDView'
-  s.version          = '0.0.4'
+  s.version          = '0.0.5'
   s.summary          = 'LCD display component for UIKit'
 
   s.description      = <<-DESC
