@@ -12,6 +12,8 @@ DerivedData/
 *.perspectivev3
 !default.perspectivev3
 xcuserdata/
+*.xcodeproj/xcshareddata/
+*.xcodeworkspace/xcshareddata/
 
 ## Other
 *.moved-aside
@@ -30,4 +32,3 @@ playground.xcworkspace
 
 ## macOS specific
 .DS_Store
-
