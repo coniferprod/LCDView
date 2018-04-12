@@ -123,9 +123,9 @@ public class LCDView: UIView {
     
     @IBInspectable var borderColor: UIColor = UIColor.white
     
-    @IBInspectable var dotOnColor: UIColor = UIColor.init(red: 0.0, green: 0.9, blue: 0.0, alpha: 1.0)
+    @IBInspectable open var dotOnColor: UIColor = UIColor.init(red: 0.0, green: 0.9, blue: 0.0, alpha: 1.0)
     
-    @IBInspectable var dotOffColor: UIColor = UIColor.init(red: 0.0, green: 0.5, blue: 0.0, alpha: 1.0)
+    @IBInspectable open var dotOffColor: UIColor = UIColor.init(red: 0.0, green: 0.5, blue: 0.0, alpha: 1.0)
     
     @IBInspectable var dotSpacing: Int {
         didSet {
