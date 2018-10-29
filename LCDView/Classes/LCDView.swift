@@ -93,7 +93,7 @@ let matrix5x7Font: Font = [
     "k": ["10000", "10000", "10010", "10100", "11000", "10100", "10010"],
     "l": ["01100", "00100", "00100", "00100", "00100", "00100", "01110"],
     "m": ["00000", "00000", "11010", "10101", "10101", "10001", "10001"],
-    "n": ["00000", "00000", "10110", "11001", "10001", "10001", "01110"],
+    "n": ["00000", "00000", "10110", "11001", "10001", "10001", "10001"],
     "o": ["00000", "00000", "01110", "10001", "10001", "10001", "01110"],
     "p": ["00000", "00000", "11110", "10001", "11110", "10000", "10000"],
     "q": ["00000", "00000", "01101", "10011", "01111", "00001", "00001"],
@@ -127,9 +127,9 @@ public class LCDView: UIView {
     
     @IBInspectable var borderColor: UIColor = UIColor.white
     
-    @IBInspectable var dotOnColor: UIColor = UIColor.init(red: 0.0, green: 0.9, blue: 0.0, alpha: 1.0)
+    @IBInspectable open var dotOnColor: UIColor = UIColor.init(red: 0.0, green: 0.9, blue: 0.0, alpha: 1.0)
     
-    @IBInspectable var dotOffColor: UIColor = UIColor.init(red: 0.0, green: 0.5, blue: 0.0, alpha: 1.0)
+    @IBInspectable open var dotOffColor: UIColor = UIColor.init(red: 0.0, green: 0.5, blue: 0.0, alpha: 1.0)
     
     @IBInspectable var dotSpacing: Int {
         didSet {
